@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Word Count Thursday Lab</string>
+    <string name="question">Write a sentence</string>
+    <string name="count">Count the words</string>
+    <string name="user_input_activity_title">The number of words are...</string>
+
+</resources>
