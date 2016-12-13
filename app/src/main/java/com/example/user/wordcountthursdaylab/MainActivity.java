@@ -32,7 +32,7 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View view) {
                 String text = sentenceEditText.getText().toString();
                 sentence = new Sentence(text);
-                int wordNumber = sentence.countWords();
+                String wordNumber = sentence.printWordsAndCount();
 
                 Intent intent = new Intent(MainActivity.this, SentenceActivity.class);
 

@@ -17,4 +17,12 @@ public class SentenceTest {
 
         assertEquals(2, sentence.countWords());
     }
+
+    @Test
+    public void canPrintWordsAndNumberOfOccurrences() {
+
+        Sentence sentence = new Sentence("Hi Hi");
+
+        assertEquals("{Hi=2}" , sentence.printWordsAndCount());
+    }
 }

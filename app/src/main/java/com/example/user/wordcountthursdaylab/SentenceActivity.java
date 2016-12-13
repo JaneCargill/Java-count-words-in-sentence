@@ -7,6 +7,8 @@ import android.util.Log;
 import android.view.View;
 import android.widget.TextView;
 
+import java.util.Map;
+
 /**
  * Created by user on 13/12/2016.
  */
@@ -24,9 +26,8 @@ public class SentenceActivity extends AppCompatActivity {
 
         Intent intent = getIntent();
         Bundle extras = intent.getExtras();
-        int number = extras.getInt("number of words");
-//        Log.d("The number is...", number.toString());
-        String number_as_string = String.format("" + number);
-        userInputText.setText(number_as_string);
+        String number = extras.getString("number of words");
+//        String number_as_string = String.format("" + number);
+        userInputText.setText(number);
     }
 }
